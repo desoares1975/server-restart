@@ -31,6 +31,14 @@ process.on('exit', code => {
 
   console.log('Exiting with code', code);
   console.log('Restarting server and application...');
+
+  try {
+    console.log('Closing server...');
+    server.close();
+  } catch(e) {
+    console.log('Could not close the server.');
+  }
+
   exec(cmd, () => {
     process.kill();
   });
