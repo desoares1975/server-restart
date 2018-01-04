@@ -1,0 +1,30 @@
+{
+  "name": "server-restart",
+  "version": "0.0.1",
+  "description": "Express server uncaught exception recovery",
+  "main": "app.js",
+  "scripts": {
+    "test": "nodemon --exec mocha",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/desoares1975/server-restart.git"
+  },
+  "keywords": [
+    "server",
+    "restart",
+    "recovery"
+  ],
+  "author": "desoares1975",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/desoares1975/server-restart/issues"
+  },
+  "homepage": "https://github.com/desoares1975/server-restart#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "dotenv": "^4.0.0",
+    "express": "^4.16.2"
+  }
+}
